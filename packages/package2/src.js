@@ -1,0 +1,1 @@
+console.log('package2 says HELLO WORLD 0.6419347291150064')
