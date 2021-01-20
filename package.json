@@ -4,7 +4,11 @@
   "description": "This is a sandbox testing project, it does nothing; ignore this please",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prep": "node prep.js",
+    "post": "node post.js",
+    "version:preminor": "lerna version preminor",
+    "publish": "lerna publish from-git",
+    "cycle": "npm run prep && npm run version:preminor && npm run post && npm run publish"
   },
   "keywords": [
     "sandbox",
