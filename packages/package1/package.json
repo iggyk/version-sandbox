@@ -1,5 +1,5 @@
 {
-    "version": "0.2.0-alpha.0",
+    "version": "0.2.0",
     "name": "sandbox-ignore-package1",
     "description": "This is a sandbox testing project, it does nothing; ignore this please",
     "keywords": [
