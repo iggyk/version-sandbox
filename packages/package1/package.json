@@ -9,5 +9,6 @@
     "author": "iggykogan",
     "publishConfig": {
         "directory": "dist"
-    }
+    },
+    "gitHead": "e65c75d1be3aadf6f00a70c8c1ed4a783f3534d0"
 }
