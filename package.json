@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "This is a sandbox testing project, it does nothing; ignore this please",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sandbox",
+    "noop"
+  ],
+  "author": "iggykogan",
+  "license": "ISC",
+  "dependencies": {
+    "lerna": "^3.22.1",
+    "lerna-cli": "^3.0.0"
+  }
+}
