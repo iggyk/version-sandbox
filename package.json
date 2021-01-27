@@ -4,10 +4,10 @@
   "description": "This is a sandbox testing project, it does nothing; ignore this please",
   "main": "index.js",
   "scripts": {
-    "prep": "node prep.js",
+    "prep": "node prep.js && git commit -a -m \"test cycle\" && git push",
     "post": "node post.js",
-    "version:preminor": "lerna version preminor",
-    "publish": "lerna publish from-git",
+    "version:preminor": "lerna version --conventional-commits --conventional-prerelease",
+    "publish": "lerna publish",
     "cycle": "npm run version:preminor && npm run post && npm run publish"
   },
   "keywords": [
