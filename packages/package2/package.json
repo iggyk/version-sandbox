@@ -1,5 +1,5 @@
 {
-    "version": "0.6.0-alpha.1+af137ed",
+    "version": "0.6.0-alpha.2+12f68e1",
     "name": "sandbox-ignore-package2",
     "description": "This is a sandbox testing project, it does nothing; ignore this please",
     "keywords": [
@@ -10,5 +10,5 @@
     "publishConfig": {
         "directory": "dist"
     },
-    "gitHead": "af137ed2b61ed75e8c3cad01b655606689e5fe2e"
+    "gitHead": "12f68e1d97196d03f6d1d8bc7d02d45bec5c3c34"
 }
