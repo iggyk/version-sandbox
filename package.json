@@ -8,7 +8,7 @@
     "post": "node post.js",
     "version:preminor": "lerna version --conventional-commits --conventional-prerelease",
     "publish": "lerna publish",
-    "cycle": "npm run version:preminor && npm run post && npm run publish"
+    "cycle": "npm run prep && npm run version:preminor && npm run post && npm run publish"
   },
   "keywords": [
     "sandbox",
