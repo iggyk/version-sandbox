@@ -7,6 +7,7 @@
     "prep": "node prep.js && git commit -a -m \"test cycle\" && git push",
     "post": "node post.js",
     "version:preminor": "lerna version --conventional-commits --conventional-prerelease",
+    "version:minor": "lerna version minor",
     "publish": "lerna publish from-git",
     "cycle": "npm run prep && npm run version:preminor && npm run post && npm run publish"
   },
