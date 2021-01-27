@@ -8,7 +8,7 @@
     "post": "node post.js",
     "version:preminor": "lerna version preminor",
     "publish": "lerna publish from-git",
-    "cycle": "npm run prep && npm run version:preminor && npm run post && npm run publish"
+    "cycle": "npm run version:preminor && npm run post && npm run publish"
   },
   "keywords": [
     "sandbox",

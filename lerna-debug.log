@@ -1,0 +1,60 @@
+0 verbose rootPath C:\sandbox\version-sandbox
+1 silly argv {
+1 silly argv   _: [ 'publish' ],
+1 silly argv   yes: true,
+1 silly argv   y: true,
+1 silly argv   composed: 'publish',
+1 silly argv   lernaVersion: '3.0.0',
+1 silly argv   '$0': 'C:\\Users\\IgorKogan\\AppData\\Roaming\\npm\\node_modules\\lerna-cli\\cli.js',
+1 silly argv   bump: 'from-git'
+1 silly argv }
+2 notice cli v3.0.0
+3 verbose rootPath C:\sandbox\version-sandbox
+4 verbose session 8420a5b57a74e1c3
+5 verbose user-agent lerna/3.0.0/node@v14.15.0+x64 (win32)
+6 verbose git-describe undefined => "v0.1.3-alpha.0-0-ge65c75d"
+7 silly git-describe parsed => {"lastTagName":"v0.1.3-alpha.0","lastVersion":"v0.1.3-alpha.0","refCount":"0","sha":"e65c75d","isDirty":false}
+8 silly getCurrentTags matching "v*.*.*"
+9 silly getTaggedPackages
+10 info auto-confirmed
+11 info publish Publishing packages to npm...
+12 info Verifying npm credentials
+13 verbose Retrieving npm user profile
+14 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 413ms
+15 silly npm profile get received {"tfa":false,"name":"iggykogan","email":"iggy.kogan@gmail.com","email_verified":true,"created":"2020-04-16T13:45:27.000Z","updated":"2020-04-16T13:45:53.934Z","cidr_whitelist":null,"fullname":"Igor K","twitter":"","github":"iggyk"}
+16 silly get npm username received {"username":"iggykogan","tfa":false,"name":"iggykogan","email":"iggy.kogan@gmail.com","email_verified":true,"created":"2020-04-16T13:45:27.000Z","updated":"2020-04-16T13:45:53.934Z","cidr_whitelist":null,"fullname":"Igor K","twitter":"","github":"iggyk"}
+17 silly verifyNpmPackageAccess
+18 http fetch GET 200 https://registry.npmjs.org/-/org/iggykogan/package?format=cli 248ms
+19 warn The logged-in user does not have any previously-published packages, skipping permission checks...
+20 info Checking two-factor auth mode
+21 verbose Retrieving npm user profile
+22 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 271ms
+23 silly npm profile get received {"tfa":false,"name":"iggykogan","email":"iggy.kogan@gmail.com","email_verified":true,"created":"2020-04-16T13:45:27.000Z","updated":"2020-04-16T13:45:53.934Z","cidr_whitelist":null,"fullname":"Igor K","twitter":"","github":"iggyk"}
+24 silly 2FA false
+25 warn ENOLICENSE Packages sandbox-ignore-package1 and sandbox-ignore-package2 are missing a license.
+25 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+25 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+26 silly getCurrentSHA
+27 verbose getCurrentSHA e65c75d1be3aadf6f00a70c8c1ed4a783f3534d0
+28 silly lifecycle No script for "prepublish" in "root", continuing
+29 silly lifecycle No script for "prepare" in "root", continuing
+30 silly lifecycle No script for "prepublishOnly" in "root", continuing
+31 silly lifecycle No script for "prepack" in "root", continuing
+32 verbose pack-directory packages\package1\dist
+33 verbose pack-directory packages\package2\dist
+34 silly lifecycle No script for "prepublish" in "sandbox-ignore-package1", continuing
+35 silly lifecycle No script for "prepublish" in "sandbox-ignore-package2", continuing
+36 silly lifecycle No script for "prepare" in "sandbox-ignore-package1", continuing
+37 silly lifecycle No script for "prepare" in "sandbox-ignore-package2", continuing
+38 silly lifecycle No script for "prepublishOnly" in "sandbox-ignore-package1", continuing
+39 silly lifecycle No script for "prepublishOnly" in "sandbox-ignore-package2", continuing
+40 silly lifecycle No script for "prepack" in "sandbox-ignore-package1", continuing
+41 silly lifecycle No script for "prepack" in "sandbox-ignore-package2", continuing
+42 silly lifecycle No script for "postpack" in "sandbox-ignore-package1", continuing
+43 verbose packed packages\package1\dist
+44 silly lifecycle No script for "postpack" in "sandbox-ignore-package2", continuing
+45 verbose packed packages\package2\dist
+46 silly lifecycle No script for "postpack" in "root", continuing
+47 verbose publish sandbox-ignore-package1
+48 verbose publish sandbox-ignore-package2
+49 error
