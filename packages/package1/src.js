@@ -1,1 +1,1 @@
-console.log('package1 says HELLO WORLD 0.3702042859414034')
+console.log('package1 says HELLO WORLD 0.8716655263298652')
