@@ -7,9 +7,10 @@ Run `npm run release:prepatch`
 
 This will publish a "canary" release to npm, bumping the patch version.
 
-Assuming the version being `1.0.0` at the moment of execution, the script will create an alpha version with a bumped `patch`, resulting in `1.0.1-alpha.1+...` followed by commit SHA [^1].
+Assuming the version being `1.0.0` at the moment of execution, the script will create an alpha version with a bumped `patch`, resulting in `1.0.1-alpha.1+...` followed by commit SHA.
 
-When run again, it will only increment the `-alpha.N...` version and update the SHA.
+
+When run again, it will only increment the `-alpha.N...` version and update the SHA. *It should be noted that npm ignores the `+SHA` part in version list; how does artifactory behave with such versions is something to be investigated yet*
 
 ### Publishing a pre-relase minor
 Works in the similar manner to pre-release patch.
@@ -33,7 +34,3 @@ In case of version being `1.1.0-alpha...`, it will behave as follows:
 Taking a look at the scripts themselves, the pre-release is using `lerna publish --canary` instead of `lerna version pre...`, chiefly because for reasons unkown, `version pre...` does not respect the `-alpha.X..` markup in the versions, resuling in some odd behavior.
 
 For example, given the current version `1.0.0`, a `lerna version preminor` will yield `1.1.0-alpha.0` which looks fine, but the subsequent `lerna version preminor` yields `1.2.0-alpha.0` instead of `1.1.0-alpha.1` as desired. Canry publishing mechanics however, respect the pre-release markup in the expected way.
-
----
-
-[^1]: It should be noted that npm ignores the `+SHA` part in version list; how does artifactory behave with such versions is something to be investigated yet
