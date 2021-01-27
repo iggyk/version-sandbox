@@ -6,11 +6,10 @@
   "scripts": {
     "prep": "node prep.js && git commit -a -m \"test cycle\" && git push",
     "post": "node post.js",
-    "version:preminor": "lerna version --conventional-commits --conventional-prerelease",
-    "version:minor": "lerna version minor",
-    "canary": "lerna publish --canary minor",
-    "lerna:publish": "lerna publish from-git",
-    "cycle": "npm run prep && npm run version:preminor && npm run post && npm run publish",
+    "canary:minor": "lerna publish --canary minor",
+    "version:patch": "lerna version patch && lerna publish from-git",
+    "cycle:minor": "npm run prep && npm run canary:minor",
+    "release:patch": "npm run prep && npm run version:patch",
     "prepublish": "node post.js"
   },
   "keywords": [
